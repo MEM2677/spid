@@ -1,0 +1,132 @@
+<md:EntityDescriptor
+        xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata"
+        xmlns="urn:oasis:names:tc:SAML:2.0:metadata"
+        xmlns:ds="http://www.w3.org/2000/09/xmldsig#"
+        xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion" ID="ID_85556e4e-5ad2-47ec-b30d-ffe43b6f4f51" entityID="https://cdp.k8s-entando.org/auth/realms/entando">
+    <dsig:Signature
+            xmlns:dsig="http://www.w3.org/2000/09/xmldsig#">
+        <dsig:SignedInfo>
+            <dsig:CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/>
+            <dsig:SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha256"/>
+            <dsig:Reference URI="#ID_85556e4e-5ad2-47ec-b30d-ffe43b6f4f51">
+                <dsig:Transforms>
+                    <dsig:Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/>
+                    <dsig:Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/>
+                </dsig:Transforms>
+                <dsig:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"/>
+                <dsig:DigestValue>k6jHphjZexs9flsiqQAPwsw4pb0kZ5vbpFVg7khzo0g=</dsig:DigestValue>
+            </dsig:Reference>
+        </dsig:SignedInfo>
+        <dsig:SignatureValue>gm3L3wol70TEx81pVJm4kxyJzm/ewa2ZShjESEuuLqrMzvQv0/DLt2y/OxnuIpsTp+QAzxFXYEhC1Z26aG68olwV3sR1fP6K9YuBdoo/Uec9PYT3fdor+gAIQmoiWO1cQdwzyVo9dlBJTDcTow9T4cYS/gJtI/OtkY1lLE9W/WClyj7TVA2g6vupmKqIch9DaCmOhi6G0z8B1FRlAbSO9S6jannbSSq/iMMi3b+46zTCGjVYVVnScJnL3FpnS4g84N3LVmGb+MX6Q0+q83TscjwjttDMoOdFZ6KNfH27L3wZUlswDX6FwoXFBEtXdZhOjDZmnwtp2xgPXAV+cmjqbQ==</dsig:SignatureValue>
+        <dsig:KeyInfo>
+            <dsig:KeyValue>
+                <dsig:RSAKeyValue>
+                    <dsig:Modulus>kjEMsnNcuGVfGgviMC9Yc6pcsNVRembZ1kHqaJz1UR1y8K/OuOpBhsfHotr58T3lC0FGu9ZQ+uzzdWSHFAPvYMvmOjh4svNu3lTaHU1i4+sfhZ//maYHro44ZQ3hV5veO6dSHpFax7iJ/zYOaSQlh6UEgK8YTgc0rZPr2sOchDVoCcmldmw8X37WuI5aYikBwRt9c/wtNwXjLcbTG/3V0Rv2kzix4ipRmzn2U3rm7PwRym/QUe1nRYb7cngs1cQJBuspLbhJUuitjmmnaoLxNyyfIqfd1Ri5VjrGU+RnTGsk8korvtZpS2pHV+3Z0qqttUnB0G+GKLGgVRf8ZhlMSQ==</dsig:Modulus>
+                    <dsig:Exponent>AQAB</dsig:Exponent>
+                </dsig:RSAKeyValue>
+            </dsig:KeyValue>
+        </dsig:KeyInfo>
+    </dsig:Signature>
+    <md:SPSSODescriptor AuthnRequestsSigned="true" WantAssertionsSigned="true" protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol">
+        <md:KeyDescriptor use="signing">
+            <ds:KeyInfo>
+                <ds:KeyName>L9iQNEMtfqPZUiIF_tBZjKtvrdwErpUL3bVg2waqSfg</ds:KeyName>
+                <ds:X509Data>
+                    <ds:X509Certificate>MIICnTCCAYUCBgGOzYQ4VDANBgkqhkiG9w0BAQsFADASMRAwDgYDVQQDDAdlbnRhbmRvMB4XDTI0MDQxMTE0MTQzOFoXDTM0MDQxMTE0MTYxOFowEjEQMA4GA1UEAwwHZW50YW5kbzCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAJIxDLJzXLhlXxoL4jAvWHOqXLDVUXpm2dZB6mic9VEdcvCvzrjqQYbHx6La+fE95QtBRrvWUPrs83VkhxQD72DL5jo4eLLzbt5U2h1NYuPrH4Wf/5mmB66OOGUN4Veb3junUh6RWse4if82DmkkJYelBICvGE4HNK2T69rDnIQ1aAnJpXZsPF9+1riOWmIpAcEbfXP8LTcF4y3G0xv91dEb9pM4seIqUZs59lN65uz8Ecpv0FHtZ0WG+3J4LNXECQbrKS24SVLorY5pp2qC8TcsnyKn3dUYuVY6xlPkZ0xrJPJKK77WaUtqR1ft2dKqrbVJwdBvhiixoFUX/GYZTEkCAwEAATANBgkqhkiG9w0BAQsFAAOCAQEAE+9Nbv77kUeWdXBU7dBKThG8ChoLkHT55egJFjEYeeZiiLt07x6DEq113Ord4I7/xs75Wl821XkJrVd6Yh34XS0YonpsrJtTxtPbkN6zn8OlxtBR19WR33fr7I9RGIKoioDT1F192CEde4UANe66YphQ9G5NdCX4fUgyRKd/IPuPqwE4BlY6chGN4dqSJRMggqi2kK11yIhY7x41YeepHvI8NEuoTiDP2oFOCtMFXaExv8DSvDSk9pMnRrd+yljYLnUQPnnpSOs/6XC02R/2qHVhca7zUSZ4Ug6gJilXEI2SaAgoHXq5d4bIocAr16EbG28Q6a3CqubxPgdFQ2Lemg==</ds:X509Certificate>
+                </ds:X509Data>
+            </ds:KeyInfo>
+        </md:KeyDescriptor>
+        <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://teo.k8s-entando.org/auth/realms/entando/broker/arubaid/endpoint"/>
+        <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://teo.k8s-entando.org/auth/realms/entando/broker/etnahitech/endpoint"/>
+        <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://teo.k8s-entando.org/auth/realms/entando/broker/infocamere/endpoint"/>
+        <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://teo.k8s-entando.org/auth/realms/entando/broker/infocertid/endpoint"/>
+        <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://teo.k8s-entando.org/auth/realms/entando/broker/intesigroup/endpoint"/>
+        <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://teo.k8s-entando.org/auth/realms/entando/broker/lepida/endpoint"/>
+        <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://teo.k8s-entando.org/auth/realms/entando/broker/namirial/endpoint"/>
+        <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://teo.k8s-entando.org/auth/realms/entando/broker/posteid/endpoint"/>
+        <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://teo.k8s-entando.org/auth/realms/entando/broker/sielteid/endpoint"/>
+        <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://teo.k8s-entando.org/auth/realms/entando/broker/spid-test-pubblico/endpoint"/>
+        <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://teo.k8s-entando.org/auth/realms/entando/broker/spiditaliaregister/endpoint"/>
+        <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://teo.k8s-entando.org/auth/realms/entando/broker/teamsystem/endpoint"/>
+        <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://teo.k8s-entando.org/auth/realms/entando/broker/timid/endpoint"/>
+        <md:NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:transient</md:NameIDFormat>
+        <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://teo.k8s-entando.org/auth/realms/entando/broker/arubaid/endpoint" index="0" isDefault="true"/>
+        <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://teo.k8s-entando.org/auth/realms/entando/broker/etnahitech/endpoint" index="1"/>
+        <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://teo.k8s-entando.org/auth/realms/entando/broker/infocamere/endpoint" index="2"/>
+        <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://teo.k8s-entando.org/auth/realms/entando/broker/infocertid/endpoint" index="3"/>
+        <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://teo.k8s-entando.org/auth/realms/entando/broker/intesigroup/endpoint" index="4"/>
+        <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://teo.k8s-entando.org/auth/realms/entando/broker/lepida/endpoint" index="5"/>
+        <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://teo.k8s-entando.org/auth/realms/entando/broker/namirial/endpoint" index="6"/>
+        <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://teo.k8s-entando.org/auth/realms/entando/broker/posteid/endpoint" index="7"/>
+        <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://teo.k8s-entando.org/auth/realms/entando/broker/sielteid/endpoint" index="8"/>
+        <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://teo.k8s-entando.org/auth/realms/entando/broker/spid-test-pubblico/endpoint" index="9"/>
+        <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://teo.k8s-entando.org/auth/realms/entando/broker/spiditaliaregister/endpoint" index="10"/>
+        <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://teo.k8s-entando.org/auth/realms/entando/broker/teamsystem/endpoint" index="11"/>
+        <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://teo.k8s-entando.org/auth/realms/entando/broker/timid/endpoint" index="12"/>
+        <md:AttributeConsumingService index="1" isDefault="true">
+            <md:ServiceName xml:lang="en">Entando</md:ServiceName>
+            <md:RequestedAttribute Name="gender" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:basic"/>
+            <md:RequestedAttribute Name="registeredOffice" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:basic"/>
+            <md:RequestedAttribute Name="companyName" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:basic"/>
+            <md:RequestedAttribute Name="countyOfBirth" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:basic"/>
+            <md:RequestedAttribute Name="familyName" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:basic"/>
+            <md:RequestedAttribute Name="digitalAddress" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:basic"/>
+            <md:RequestedAttribute Name="email" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:basic"/>
+            <md:RequestedAttribute Name="mobilePhone" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:basic"/>
+            <md:RequestedAttribute Name="spidCode" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:basic"/>
+            <md:RequestedAttribute Name="name" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:basic"/>
+            <md:RequestedAttribute Name="fiscalNumber" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:basic"/>
+            <md:RequestedAttribute Name="address" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:basic"/>
+            <md:RequestedAttribute Name="placeOfBirth" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:basic"/>
+            <md:RequestedAttribute Name="dateOfBirth" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:basic"/>
+            <md:RequestedAttribute Name="ivaCode" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:basic"/>
+        </md:AttributeConsumingService>
+    </md:SPSSODescriptor>
+    <md:Organization>
+        <md:OrganizationName xml:lang="en">Entando</md:OrganizationName>
+        <md:OrganizationName xml:lang="it">Entando</md:OrganizationName>
+        <md:OrganizationDisplayName xml:lang="en">Entando</md:OrganizationDisplayName>
+        <md:OrganizationDisplayName xml:lang="it">Entando</md:OrganizationDisplayName>
+        <md:OrganizationURL xml:lang="it">https://forumpa.apps.psdemo.eng-entando.com/entando-de-app/</md:OrganizationURL>
+        <md:OrganizationURL xml:lang="en">https://forumpa.apps.psdemo.eng-entando.com/entando-de-app/</md:OrganizationURL>
+    </md:Organization>
+    <md:ContactPerson contactType="other">
+        <md:Extensions>
+            <spid:VATNumber
+                    xmlns:spid="https://spid.gov.it/saml-extensions">IT03264290929
+            </spid:VATNumber>
+            <spid:Private
+                    xmlns:spid="https://spid.gov.it/saml-extensions"/>
+        </md:Extensions>
+        <md:Company>Entando</md:Company>
+        <md:EmailAddress>bastachesia@gmail.com</md:EmailAddress>
+        <md:TelephoneNumber>+395556935632</md:TelephoneNumber>
+    </md:ContactPerson>
+    <md:ContactPerson contactType="billing">
+        <md:Extensions>
+            <fpa:CessionarioCommittente
+                    xmlns:fpa="https://spid.gov.it/invoicing-extensions">
+                <fpa:DatiAnagrafici>
+                    <fpa:IdFiscaleIVA>
+                        <fpa:IdPaese>IT</fpa:IdPaese>
+                        <fpa:IdCodice>3264290929</fpa:IdCodice>
+                    </fpa:IdFiscaleIVA>
+                    <fpa:Anagrafica>
+                        <fpa:Denominazione>Entando</fpa:Denominazione>
+                    </fpa:Anagrafica>
+                </fpa:DatiAnagrafici>
+                <fpa:Sede>
+                    <fpa:Indirizzo>Piazza Salento</fpa:Indirizzo>
+                    <fpa:NumeroCivico>9</fpa:NumeroCivico>
+                    <fpa:CAP>09127</fpa:CAP>
+                    <fpa:Comune>Cagliari</fpa:Comune>
+                    <fpa:Provincia>CA</fpa:Provincia>
+                    <fpa:Nazione>IT</fpa:Nazione>
+                </fpa:Sede>
+            </fpa:CessionarioCommittente>
+        </md:Extensions>
+        <md:Company>Entando</md:Company>
+        <md:EmailAddress>bastachesia@gmail.com</md:EmailAddress>
+        <md:TelephoneNumber>+395556935632</md:TelephoneNumber>
+    </md:ContactPerson>
+</md:EntityDescriptor>
